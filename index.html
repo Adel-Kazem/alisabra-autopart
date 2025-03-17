@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ali Sabra Auto Parts & Service</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-100">
+<!-- Navigation Bar -->
+<nav class="bg-blue-800 text-white shadow-lg">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+        <div class="flex items-center">
+            <i class="fas fa-cogs text-2xl mr-2"></i>
+            <span class="font-bold text-xl">Ali Sabra Auto Parts</span>
+        </div>
+        <div class="hidden md:flex space-x-6">
+            <a href="#home" class="hover:text-blue-200 transition">Home</a>
+            <a href="#services" class="hover:text-blue-200 transition">Services</a>
+            <a href="#products" class="hover:text-blue-200 transition">Products</a>
+            <a href="#about" class="hover:text-blue-200 transition">About</a>
+            <a href="#contact" class="hover:text-blue-200 transition">Contact</a>
+        </div>
+        <div class="md:hidden">
+            <button id="menu-toggle" class="focus:outline-none">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-blue-700 pb-4 px-4">
+        <a href="#home" class="block py-2 hover:text-blue-200 transition">Home</a>
+        <a href="#services" class="block py-2 hover:text-blue-200 transition">Services</a>
+        <a href="#products" class="block py-2 hover:text-blue-200 transition">Products</a>
+        <a href="#about" class="block py-2 hover:text-blue-200 transition">About</a>
+        <a href="#contact" class="block py-2 hover:text-blue-200 transition">Contact</a>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Quality Auto Parts & Expert Service</h1>
+                <p class="text-lg mb-6">Your one-stop shop for all automotive needs in the area. Quality parts and
+                    professional service guaranteed.</p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#contact" class="bg-white text-blue-800 font-bold px-6 py-3 rounded-lg hover:bg-blue-100 transition text-center">Contact
+                        Us</a>
+                    <a href="#services" class="bg-transparent border-2 border-white font-bold px-6 py-3 rounded-lg hover:bg-white hover:text-blue-800 transition text-center">Our
+                        Services</a>
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8YXV0byUyMHBhcnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+                     alt="Auto Parts Display"
+                     class="rounded-lg shadow-xl w-full">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">Our Services</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">We provide comprehensive auto repair services and quality parts
+                to keep your vehicle running smoothly.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Service Card 1 -->
+            <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                <div class="text-blue-600 mb-4">
+                    <i class="fas fa-oil-can text-4xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Oil Change Service</h3>
+                <p class="text-gray-600">Professional oil change service using high-quality oils and filters for all
+                    vehicle types.</p>
+            </div>
+
+            <!-- Service Card 2 -->
+            <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                <div class="text-blue-600 mb-4">
+                    <i class="fas fa-car-battery text-4xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Battery Replacement</h3>
+                <p class="text-gray-600">Quick and reliable battery testing and replacement services with warranty
+                    options.</p>
+            </div>
+
+            <!-- Service Card 3 -->
+            <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                <div class="text-blue-600 mb-4">
+                    <i class="fas fa-cog text-4xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Engine Diagnostics</h3>
+                <p class="text-gray-600">Advanced diagnostic equipment to identify and resolve engine issues
+                    efficiently.</p>
+            </div>
+
+            <!-- Service Card 4 -->
+            <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                <div class="text-blue-600 mb-4">
+                    <i class="fas fa-car text-4xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Brake Services</h3>
+                <p class="text-gray-600">Complete brake system inspection, repair, and replacement by certified
+                    technicians.</p>
+            </div>
+
+            <!-- Service Card 5 -->
+            <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                <div class="text-blue-600 mb-4">
+                    <i class="fas fa-tachometer-alt text-4xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Performance Upgrades</h3>
+                <p class="text-gray-600">Custom performance part installation to enhance your vehicle's
+                    capabilities.</p>
+            </div>
+
+            <!-- Service Card 6 -->
+            <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                <div class="text-blue-600 mb-4">
+                    <i class="fas fa-tools text-4xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">General Repairs</h3>
+                <p class="text-gray-600">Comprehensive repair services for all makes and models with quality parts.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Products -->
+<section id="products" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">Featured Products</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">We stock a wide range of quality auto parts for all vehicle makes
+                and models.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Product 1 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
+                <img src="https://images.unsplash.com/photo-1600147131759-880e5e489acd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGNhciUyMGJyYWtlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                     alt="Brake Pads"
+                     class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold mb-2">Premium Brake Pads</h3>
+                    <p class="text-gray-600 mb-2">High-performance brake pads for all vehicle types.</p>
+                    <p class="text-blue-600 font-bold">Various Models Available</p>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
+                <img src="https://images.unsplash.com/photo-1596636478939-6c22e45614d9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FyJTIwYmF0dGVyeXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                     alt="Car Battery"
+                     class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold mb-2">High-Capacity Batteries</h3>
+                    <p class="text-gray-600 mb-2">Long-lasting batteries with excellent cold-cranking performance.</p>
+                    <p class="text-blue-600 font-bold">With Installation Service</p>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
+                <img src="https://images.unsplash.com/photo-1600051753828-65eacaa0e8a3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2FyJTIwb2lsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                     alt="Engine Oil"
+                     class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold mb-2">Synthetic Engine Oil</h3>
+                    <p class="text-gray-600 mb-2">Premium synthetic oils for enhanced engine protection.</p>
+                    <p class="text-blue-600 font-bold">Multiple Grades Available</p>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
+                <img src="https://images.unsplash.com/photo-1615412704911-55ca9cfbd48a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FyJTIwZmlsdGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                     alt="Air Filter"
+                     class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold mb-2">Performance Air Filters</h3>
+                    <p class="text-gray-600 mb-2">High-flow air filters for improved engine breathing.</p>
+                    <p class="text-blue-600 font-bold">For All Vehicle Makes</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-10">
+            <a href="#contact" class="bg-blue-600 text-white font-bold px-6 py-3 rounded-lg hover:bg-blue-700 transition inline-block">
+                Ask About Our Full Inventory
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+                <img src="https://images.unsplash.com/photo-1583417465209-9086cc38d8e3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGF1dG8lMjBtZWNoYW5pY3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                     alt="Ali Sabra Auto Shop"
+                     class="rounded-lg shadow-lg w-full">
+            </div>
+            <div class="md:w-1/2 md:pl-10">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">About Ali Sabra Auto Parts</h2>
+                <p class="text-gray-600 mb-4">Founded with a passion for cars and a commitment to quality service, Ali
+                    Sabra Auto Parts has been serving our community for years with integrity and expertise.</p>
+                <p class="text-gray-600 mb-4">We pride ourselves on offering only the highest quality parts and
+                    professional service at competitive prices. Our team of experienced technicians can handle
+                    everything from basic maintenance to complex repairs.</p>
+                <p class="text-gray-600 mb-6">Whether you're looking for specific auto parts or need comprehensive
+                    vehicle service, we're here to help you keep your vehicle running at its best.</p>
+                <div class="flex space-x-4">
+                    <div class="flex items-center">
+                        <i class="fas fa-check-circle text-blue-600 mr-2"></i>
+                        <span class="font-medium">Quality Parts</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-check-circle text-blue-600 mr-2"></i>
+                        <span class="font-medium">Expert Service</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-check-circle text-blue-600 mr-2"></i>
+                        <span class="font-medium">Fair Prices</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials -->
+<section class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">What Our Customers Say</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">Don't just take our word for it - hear from our satisfied
+                customers.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Testimonial 1 -->
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <div class="flex items-center mb-4">
+                    <div class="text-yellow-400 flex">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <p class="text-gray-600 mb-4">"Ali provided excellent service when I needed new brake pads. The parts
+                    were high quality and the service was fast and professional. Highly recommend!"</p>
+                <div class="font-medium">- Mohammed H.</div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <div class="flex items-center mb-4">
+                    <div class="text-yellow-400 flex">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <p class="text-gray-600 mb-4">"I've been buying parts from Ali Sabra for years. He always has what I
+                    need at reasonable prices, and his advice has saved me a lot of trouble. Great shop!"</p>
+                <div class="font-medium">- Sarah K.</div>
+            </div>
+
+            <div class="text-yellow-400 flex"><i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half-alt"></i></div>
+        </div>
+        <p class="text-gray-600 mb-4">"When my car broke down, Ali not only provided the parts I needed but also gave me
+            step-by-step guidance on how to fix it myself. Saved me a lot of money and taught me something new!"</p>
+        <div class="font-medium">- Ahmed R.</div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">Contact Us</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">Have questions or need parts? Reach out to us using any of the
+                methods below.</p>
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-8">
+            <!-- Contact Info -->
+            <div class="md:w-1/2 bg-gray-50 p-8 rounded-lg shadow-md">
+                <h3 class="text-2xl font-semibold mb-6 text-gray-800">Get In Touch</h3>
+
+                <div class="mb-6 flex items-start">
+                    <div class="text-blue-600 mr-4">
+                        <i class="fas fa-map-marker-alt text-2xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-medium text-gray-800">Location</h4>
+                        <p class="text-gray-600">123 Auto Street, Garage District</p>
+                    </div>
+                </div>
+
+                <div class="mb-6 flex items-start">
+                    <div class="text-blue-600 mr-4">
+                        <i class="fas fa-clock text-2xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-medium text-gray-800">Business Hours</h4>
+                        <p class="text-gray-600">Monday-Friday: 8:00 AM - 6:00 PM</p>
+                        <p class="text-gray-600">Saturday: 9:00 AM - 3:00 PM</p>
+                        <p class="text-gray-600">Sunday: Closed</p>
+                    </div>
+                </div>
+
+                <div class="mb-8 flex items-start">
+                    <div class="text-blue-600 mr-4">
+                        <i class="fas fa-phone text-2xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-medium text-gray-800">Contact</h4>
+                        <p class="text-gray-600">Phone: To be provided</p>
+                        <p class="text-gray-600">Email: ali.sabra@example.com</p>
+                    </div>
+                </div>
+
+                <a href="#" id="whatsapp-button" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-4 rounded-lg inline-flex items-center transition">
+                    <i class="fab fa-whatsapp text-xl mr-2"></i>
+                    <span>Contact via WhatsApp</span>
+                </a>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="md:w-1/2 bg-gray-50 p-8 rounded-lg shadow-md">
+                <h3 class="text-2xl font-semibold mb-6 text-gray-800">Send Us a Message</h3>
+
+                <form>
+                    <div class="mb-4">
+                        <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
+                        <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                        <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
+                        <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+
+                    <div class="mb-6">
+                        <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                        <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                    </div>
+
+                    <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Map Section -->
+<section class="py-8 bg-gray-100">
+    <div class="container mx-auto px-4">
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <!-- Replace with actual map embed code -->
+            <div class="h-96 bg-gray-300 flex items-center justify-center">
+                <p class="text-gray-600 text-lg">Map location will be displayed here - Replace with your Google Maps
+                    embed code</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-blue-900 text-white py-12">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <h3 class="text-xl font-bold mb-4">Ali Sabra Auto Parts</h3>
+                <p class="text-blue-200 mb-4">Your trusted partner for quality auto parts and professional service.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-white hover:text-blue-300 transition">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-white hover:text-blue-300 transition">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-white hover:text-blue-300 transition">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="#home" class="text-blue-200 hover:text-white transition">Home</a></li>
+                    <li><a href="#services" class="text-blue-200 hover:text-white transition">Services</a></li>
+                    <li><a href="#products" class="text-blue-200 hover:text-white transition">Products</a></li>
+                    <li><a href="#about" class="text-blue-200 hover:text-white transition">About Us</a></li>
+                    <li><a href="#contact" class="text-blue-200 hover:text-white transition">Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-bold mb-4">Services</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-blue-200 hover:text-white transition">Oil Change</a></li>
+                    <li><a href="#" class="text-blue-200 hover:text-white transition">Brake Service</a></li>
+                    <li><a href="#" class="text-blue-200 hover:text-white transition">Battery Replacement</a></li>
+                    <li><a href="#" class="text-blue-200 hover:text-white transition">Engine Diagnostics</a></li>
+                    <li><a href="#" class="text-blue-200 hover:text-white transition">General Repairs</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-bold mb-4">Business Hours</h3>
+                <ul class="space-y-2">
+                    <li class="flex justify-between">
+                        <span class="text-blue-200">Monday-Friday:</span>
+                        <span>8:00 AM - 6:00 PM</span>
+                    </li>
+                    <li class="flex justify-between">
+                        <span class="text-blue-200">Saturday:</span>
+                        <span>9:00 AM - 3:00 PM</span>
+                    </li>
+                    <li class="flex justify-between">
+                        <span class="text-blue-200">Sunday:</span>
+                        <span>Closed</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="border-t border-blue-800 mt-10 pt-6 text-center text-blue-300">
+            <p>&copy; 2025 Ali Sabra Auto Parts. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- WhatsApp Floating Button -->
+<a href="#" id="floating-whatsapp" class="fixed bottom-6 right-6 bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition z-50">
+    <i class="fab fa-whatsapp text-2xl"></i>
+</a>
+
+<!-- JavaScript -->
+<script>
+    // Mobile menu toggle
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenu.classList.toggle('hidden');
+    });
+
+    // WhatsApp button - replace 'YOUR_PHONE_NUMBER' with the actual number
+    document.getElementById('whatsapp-button').addEventListener('click', function (e) {
+        e.preventDefault();
+        window.open('https://wa.me/YOUR_PHONE_NUMBER', '_blank');
+    });
+
+    document.getElementById('floating-whatsapp').addEventListener('click', function (e) {
+        e.preventDefault();
+        window.open('https://wa.me/YOUR_PHONE_NUMBER', '_blank');
+    });
+</script>
+</body>
+</html>
