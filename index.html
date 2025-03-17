@@ -493,6 +493,10 @@
         e.preventDefault();
         window.open('https://wa.me/0096170836663', '_blank');
     });
+
+    // Change the URL without refreshing the page
+    window.history.pushState({}, "", "/your-custom-path");
+
 </script>
 </body>
 </html>
